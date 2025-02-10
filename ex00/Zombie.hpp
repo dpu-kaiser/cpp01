@@ -6,7 +6,7 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 10:26:18 by dkaiser           #+#    #+#             */
-/*   Updated: 2025/02/10 10:38:18 by dkaiser          ###   ########.fr       */
+/*   Updated: 2025/02/10 10:56:19 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ class Zombie
         void announce(void);
     private:
         std::string name;
-}
+};
+
+Zombie* newZombie(std::string name);
 
 #endif

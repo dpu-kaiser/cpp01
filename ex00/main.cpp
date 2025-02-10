@@ -6,10 +6,14 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/10 10:24:56 by dkaiser           #+#    #+#             */
-/*   Updated: 2025/02/10 10:27:00 by dkaiser          ###   ########.fr       */
+/*   Updated: 2025/02/10 10:56:08 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Zombie.hpp"
+
 int main(void)
 {
+    Zombie* z1 = newZombie("z1");
+    delete z1;
 }
