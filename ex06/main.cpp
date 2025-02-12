@@ -6,19 +6,18 @@
 /*   By: dkaiser <dkaiser@student.42heilbronn.de    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 10:35:53 by dkaiser           #+#    #+#             */
-/*   Updated: 2025/02/12 11:35:27 by dkaiser          ###   ########.fr       */
+/*   Updated: 2025/02/12 13:32:01 by dkaiser          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Harl.hpp"
 
-int main(void)
+int main(int argc, char *argv[])
 {
     Harl harl = Harl();
 
-    harl.complain("DEBUG");
-    harl.complain("INFO");
-    harl.complain("WARNING");
-    harl.complain("ERROR");
-    harl.complain("Invalid Input");
+    if (argc != 2)
+      return 1;
+
+    harl.complain(argv[1]);
 }
